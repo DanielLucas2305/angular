@@ -1,0 +1,9 @@
+<div class="aulas">
+    <div *ngIf= "canAlMosso; Else cantAlMosso">Mostrando isso porque foi permitido(já pode al mossar !!!)</div>
+    <!-- precisa colocar a condição depois da igualdade entre aspas-->
+    <ng-template #cantAlMosso>
+    <div>
+        (Não pode al mossar !!)
+    </div>
+    </ng-template>
+</div>
